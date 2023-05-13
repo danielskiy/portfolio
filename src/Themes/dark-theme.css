@@ -1,0 +1,7 @@
+
+body[data-theme='dark'] {
+	--one-bg-color: #343a40;
+    --two-bg-color: #6D6D6D;
+	--text-color: rgb(255, 255, 255);
+	
+}

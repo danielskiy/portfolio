@@ -1,0 +1,154 @@
+  {
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "My name is Daniel Slutskovsky and I was born on December 26th, 2001. I live in Germany and am currently studying mathematics. As an aspiring mathematician, I am very analytical and solution-oriented. In my free time, I enjoy web development and have skills in JavaScript, React, HTML, and CSS. I am very eager to learn and always looking for new challenges. My goal is to use my skills to assist clients in realizing their projects.",
+      "section_name": {
+        "home": "Home",
+        "about": "About Me",
+        "projects": "Projects",
+        "resume": "Resume",
+        "skills": "Skills",
+        "contact": "Contact"
+      }
+    },
+    "projects": [
+      {
+        "title": "Project 1",
+        "startDate": "2020",
+        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "images": [
+          "images/cover.jpg",
+          "images/portfolio/animal-shelter/p2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "Project 2",
+        "startDate": "2018",
+        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "images": [
+          "images/cover.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Project 3",
+        "startDate": "2018",
+        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "images": [
+          "images/cover.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      }
+    ],
+    "resume": [
+      {
+        "company": "Justus-Liebig Universität Giessen",
+        "title": "Bachelor of Mathematics",
+        "years": "10.2020 - present",
+        "mainTech": [
+          "Giessen, Germany"
+        ],
+        "technologies": [
+          "C++",
+          "HTML",
+          "JavaScript",
+          "Bootstrap",
+          "CSS",
+          "Assembler",
+          "R"
+        ]
+      },
+      {
+        "company": "Goetheschule Wetzlar",
+        "title": "High School",
+        "years": "08.2017 - 07.2020",
+        "mainTech": [
+          "Wetzlar, Germany"
+        ],
+        "technologies": [
+          "Java",
+          "HTML",
+          "CSS"
+        ] 
+      },
+      {
+        "company": "Freiherr-vom-Stein Schule Wetzlar",
+        "title": "Middle School",
+        "years": "08.2012 - 07.2017",
+        "mainTech": [
+          "Wetzlar, Germany"
+        ],
+        "technologies": [
+      
+        ]
+      }
+    ],
+    "skills":[
+      {
+        "language": "HTML5",
+        "progressPercentage":"70"
+      },
+      {
+        "language": "JavaScript",
+        "progressPercentage":"60"
+      },
+      {
+        "language": "Python",
+        "progressPercentage":"60"
+      },
+      {
+        "language": "Java",
+        "progressPercentage":"55"
+      },
+      {
+        "language": "C++",
+        "progressPercentage":"55"
+      },
+      {
+        "language": "CSS3",
+        "progressPercentage":"50"
+      }
+      
+    ],
+    "contact":{
+      "text": "Hallo"
+    }
+
+  }

@@ -1,38 +1,380 @@
-.App {
-  text-align: center;
+@import '../src/Themes/dark-theme.css';
+@import '../src/Themes/light-theme.css';
+
+
+
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: var(--one-bg-color) !important;
+}
+:root {
+	--navbar-height: 65px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr {
+	width: 86%;
+	border: none;
+    height: 5px; 
+    background-color: var(--text-color);
+	margin: 0 auto !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.full-width {
+	max-width: 100%;
   }
+
+.bgimage {
+    background-image: url("../public/images/bannerBg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.aligner {
+	position: fixed;
+  	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header {
+	position: relative !important;
+	height: 100%;
+	min-height: 450px;
+	width: 100%;
+	background-size: cover;
+	text-align: center;
+	overflow: hidden;
+	/*background-color: var(--two-bg-color);*/
+	background-size: cover;
+	color: var(--text-color);
+	
+}
+
+.title-container {
+	height: 50px;
+}
+
+.title-styles {
+	font-family: 'Raleway', sans-serif;
+	font-size: 200%;
+}
+
+header h1 {
+	font-size: 300%;
+	text-align: center;
+	font-weight: 600 !important;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin: 0 auto 18px auto;
+	width: 100%;
+}
+
+.navbar{
+  color: var(--text-color) !important;
+  height: var(--navbar-height);
+  
+}
+
+
+.nav-link{
+  font-size: larger; 
+  margin: 1rem;
+  color: var(--text-color) !important;
+  
+}
+
+.navbar-brand{
+	color: var(--text-color) !important;
+}
+
+.polaroid span {
+	background: #ffffff;
+	display: inline-block;
+	margin: 30px 0 30px;
+	padding: 15px 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	transition: all .20s linear;
+	z-index: 0;
+	position: relative;
+}
+
+.polaroid img {
+	display: block;
+	max-width: 200px;
+}
+
+div.polaroid span {
+    cursor: "auto";
+	background: var(--two-bg-color) !important;
+}
+
+#about{
+	position: relative !important;
+	/*background-color: var(--one-bg-color);*/
+	overflow: hidden;
+	color: var(--text-color) !important;
+	
+}
+
+.text{
+	padding-top: 5%;
+	font: 1rem 'opensans-bold', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: var(--text-color);
+}
+
+#about h1,
+#projects h1,
+#skills h1,
+#contact h1{
+	padding-top: 5%;
+	font: 1.5rem 'opensans-bold', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: var(--text-color);
+	text-align: center;
+}
+
+.styles_typicalWrapper__1_Uvh::after {
+	cursor: none !important;
+	display: none;
+}
+
+.card{
+	background-color: var(--two-bg-color) !important;
+}
+#projects{
+	/*background: var(--two-bg-color);*/
+	color: var(--text-color);
+}
+
+#projects,
+#skills,
+#about {
+	/*background: var(--two-bg-color);*/
+	padding-bottom: 7%;
+}
+
+.margin-hr{
+	margin-left: 6% !important;
+	margin-right: 6% !important;
+}
+
+.portfolio-item {
+	max-width: 100%;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.projects .portfolio-item .portfolio-item-caption {
+	transition: all ease 0.5s;
+	opacity: 0;
+	background-color: rgba(51, 51, 51, 0.9);
+}
+
+.projects .portfolio-item .portfolio-item-caption:hover {
+	opacity: 1;
+}
+
+.projects .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+	font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+	.projects .closeButtonResponsive {
+		display: block;
+	}
+	.projects .portfolio-item {
+		margin-bottom: 30px;
+	}
+}
+
+
+.projects-container{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto img {
+	width: 100%;
+}
+.foto{
+	height: 100%;
+}
+.foto div {
+	background: var(--two-bg-color);
+	width: 100%;
+	height: 100%;
+	padding: 20px 20px 10px;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	transition: all .20s linear;
+	z-index: 0;
+	position: relative;
+}
+
+.foto div:after {
+	color: #333;
+	font-size: 25px;
+	content: attr(title);
+	position: relative;
+	top: 15px;
+}
+
+.foto div:hover {
+	transform: scale(1.05);
+	z-index: 10;
+	box-shadow: 0 30px 60px rgba(0, 0, 0, .7);
+}
+
+.project-date {
+	font-size: 16px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 8px 15px 2px 15px;
+	position: relative;
+	z-index: -500;
+	border-top: 5px solid #696969;
+	border-radius: 0 0 5px 5px;
+	background-color: #696969;
+	color: white;
+}
+
+.project-title-settings {
+	margin-top: 2%;
+	font: 20px/24px 'opensans-bold', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: var(--text-color);
+	text-align: center;
+}
+
+.language {
+	font-size: 25px;
+	/*background-color:var(--two-bg-color);*/
+	padding-bottom: 10px;
+	padding-top: 80px;
+}
+
+.language-icon {
+	font-size: 70px;
+	cursor: pointer;
+}
+
+.vertical-timeline-element-date {
+	padding: 0 !important;
+	margin: 0 !important;
+	color: #000000;
+	
+}
+
+.section-title {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	font: 1.5rem 'opensans-bold', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: var(--text-color);
+	text-align: center;
+}
+
+
+.experience-icon {
+	font-size: 300%;
+	margin-top: 25%;
+	text-align: center;
+}
+
+.experience-badge {
+	font-size: 11px !important;
+	text-align: left !important;
+	padding: 5px 8px 5px 8px !important;
+	vertical-align: baseline;
+	background-color: var(--one-bg-color) !important;
+	color: var(--text-color);
+	font-weight: lighter !important;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media only screen and (max-width: 1170px) {
+	.experience-icon {
+		font-size: 170%;
+		margin-top: 27%;
+		text-align: center;
+	}
+}
+.main-badge {
+	font-size: 13px !important;
+	text-align: left !important;
+	padding: 5px 8px 5px 8px !important;
+	vertical-align: baseline;
+	background-color: #AE944F !important;
+	color: rgb(102, 39, 39);
+	font-weight: lighter !important;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.meter {
+	height: 20px;
+	position: relative;
+	background: var(--two-bg-color);
+	border-radius: 25px;
   }
-  to {
-    transform: rotate(360deg);
+.meter > span {
+	display: block;
+	height: 100%;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: var(--text-color);
+	position: relative;
+	overflow: hidden;
+	width:0%;
+	transition: width 2.5s ease-in-out;
+}
+.skill {
+	line-height: 3.5vw;
+	color: var(--text-color);
   }
+  .skill-bars {
+	font-size: 28px;
+	width: 40%;
+  }
+.skills-container {
+	display: flex;
+	margin: 0px auto;
+	align-items: center;
+}
+
+.skills-container > * {
+	flex: 1;
+}
+
+
+footer {
+	min-height: 100px;
+	width: 100%;
+	overflow: hidden;
+	font-size: 14px;
+	color: var(--text-color);
+	position: relative;
+	text-align: center;
+}
+.social-links {
+	margin-top: 50px;
+	font-size: 22px;
 }
